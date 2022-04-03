@@ -6,10 +6,10 @@
     the team is labelled as Local or Global. The suffix will be something like (GLO-XX) or (LOC-XX), where XX is the two letter ISO country code.
 
     .EXAMPLE
-    .\Validate-TeamSitesNamingConvention.ps1 -SiteURL https://[tenant].sharepoint.com -Tenant [tenant].onmicrosoft.com -Thumbprint [CertificateThumbprint] -ClientId [ClientId]
+    .\Validate-TeamsNamingConvention.ps1 -SiteURL https://[tenant].sharepoint.com -Tenant [tenant].onmicrosoft.com -Thumbprint [CertificateThumbprint] -ClientId [ClientId]
 
     .LINK
-    https://github.com/blazejkuklinski/richemont#readme
+    https://github.com/blazejkuklinski/richemont/blob/main/Validate-TeamsNamingConvention/README.md
 #>
 
 [Cmdletbinding()]
