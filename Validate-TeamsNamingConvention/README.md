@@ -26,7 +26,7 @@ Optional steps:
 
 > Store Credentials in Windows Credential Manager:
 > ```powershell
-> Add-PnPStoredCredential -Name TeamsNamingConventionValidator -Username [account]@[tenant].onmicrosoft.com -Password > (ConvertTo-SecureString -String "[password]" -AsPlainText -Force)
+> Add-PnPStoredCredential -Name TeamsNamingConventionValidator -Username [account]@[tenant].onmicrosoft.com -Password (ConvertTo-SecureString -String "[password]" -AsPlainText -Force)
 > ```
 Or (*recommanded*)
 
@@ -45,8 +45,8 @@ Using certificate (*recommended*):
 
 Using credentials:
 ```powershell
-$UserName= "login@tenant.onmicrosoft.com"
-$Password = "password"
+$UserName = "[account]@[tenant].onmicrosoft.com"
+$Password = "[password]"
 $SecurePassword = ConvertTo-SecureString -String $Password -AsPlainText -Force
 $Cred = New-Object -TypeName System.Management.Automation.PSCredential -argumentlist $UserName, $SecurePassword
 
